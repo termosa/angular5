@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>Hello Angular in 5 steps</title>
+	<link rel="stylesheet" href="styles/ex1.css">
+</head>
+<body>
+	<div ng-app>
+		<nav class="{{active}}" ng-click="$event.preventDefault()">
+			<a href="javascript:void(0)" class="home" ng-click="active='home'">Home</a>
+			<a href="javascript:void(0)" class="projects" ng-click="active='projects'">Projects</a>
+			<a href="javascript:void(0)" class="services" ng-click="active='services'">Services</a>
+			<a href="javascript:void(0)" class="contact" ng-click="active='contact'">Contact</a>
+		</nav>
+
+		<p ng-hide="active">Please click a menu item</p>
+		<p ng-show="active">You choose <strong>{{active}}</strong></p>
+	</div>
+
+	<script src="/vendors/angular/angular.min.js"></script>
+</body>
+</html>

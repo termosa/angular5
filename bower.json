@@ -1,0 +1,18 @@
+{
+  "name": "ang5",
+  "version": "0.0.0",
+  "authors": [
+    "Stanislav Termosa <termosa.stanislav@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.0.7"
+  }
+}

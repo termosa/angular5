@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>Hello Angular in 5 steps</title>
+	<link rel="stylesheet" href="styles/ex2.css">
+</head>
+<body>
+	<div ng-app ng-controller="InlineEditorController" ng-click="hideTooltip()">
+		<div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip">
+			<input type="text" ng-model="value">
+		</div>
+
+		<p ng-click="toggleTooltip($event)">{{value}}</p>
+	</div>
+
+	<script src="/vendors/angular/angular.min.js"></script>
+	<script src="/scripts/ex2.js"></script>
+</body>
+</html>
